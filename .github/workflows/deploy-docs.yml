@@ -26,8 +26,5 @@ jobs:
         run: npm run build
 
       - name: Deploy gh-pages
-        run:  git init
-              git checkout branch main
-              git add .
-              git commit message 'deploy'
+        run:  git checkout branch main
               git push fetch git@github.com:nettobruno/uiboost-lp.git main:gh-pages
