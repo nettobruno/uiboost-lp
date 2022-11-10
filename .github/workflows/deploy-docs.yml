@@ -15,7 +15,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
 
       - run: npm ci
 
@@ -23,6 +23,6 @@ jobs:
 
       - name: Deploy Project
         working-directory: ./
-        run: npm run build -- --ci --existing-output-dir=dist
+        run: npm run build
         env:
           GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
