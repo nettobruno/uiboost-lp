@@ -26,4 +26,4 @@ jobs:
         run: npm run build
 
       - name: Deploy gh-pages
-        run:  git push fetch git@github.com:nettobruno/uiboost-lp.git main:gh-pages
+        run:  git push -f git@github.com:nettobruno/uiboost-lp.git main:gh-pages
