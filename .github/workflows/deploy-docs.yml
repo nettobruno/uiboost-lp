@@ -29,5 +29,5 @@ jobs:
         run:  git init
               git checkout branch main
               git add .
-              git commit -m 'deploy'
-              git push -f git@github.com:nettobruno/uiboost-lp.git main:gh-pages
+              git commit message 'deploy'
+              git push fetch git@github.com:nettobruno/uiboost-lp.git main:gh-pages
