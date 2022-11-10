@@ -21,8 +21,13 @@ jobs:
 
       - run: npm run build
 
-      - name: Deploy Project
+      - name: Build Project
         working-directory: ./
         run: npm run build
-        env:
-          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+
+      - name: Deploy gh-pages
+        run:  git init
+              git checkout -B main
+              git add -A
+              git commit -m 'deploy'
+              git push -f git@github.com:nettobruno/uiboost-lp.git main:gh-pages
