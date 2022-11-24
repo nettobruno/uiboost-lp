@@ -1,5 +1,10 @@
+import { globalStyles } from './styles/stitches.config'
+import { Title } from './styles'
+
 function App() {
-  return <h1>Home Page</h1>
+  globalStyles();
+
+  return <Title>Home Page</Title>
 }
 
 export default App
