@@ -1,10 +1,23 @@
+import { Container, Row, Col } from 'react-grid-system'
 import { globalStyles } from './styles/stitches.config'
-import { Title } from './styles'
+import { Header, Title } from './styles'
 
 function App() {
-  globalStyles();
+  globalStyles()
 
-  return <Title>Home Page</Title>
+  return (
+    <>
+      <Header>
+        <Container>
+          <Row debug>
+            <Col debug>
+              <Title>Home Page</Title>
+            </Col>
+          </Row>
+        </Container>
+      </Header>
+    </>
+  )
 }
 
 export default App
