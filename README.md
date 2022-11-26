@@ -44,7 +44,7 @@
 ---
 
 <h2>👨🏾‍💻 Projeto no Ar</h2>
-<p>Caso queira ver como o projeto está neste momento basta acessar a <a href="https://nettobruno.github.io/uiboost-lp/">Link</a>. Todas as modificações feitas até o agora, e também as futuras melhorias, serão todas exibidas neste mesmo endereço.</p>
+<p>Caso queira ver como o projeto está neste momento basta acessar o <a href="https://nettobruno.github.io/uiboost-lp/">Link</a>. Todas as modificações feitas até agora, e também as futuras melhorias, serão todas exibidas neste mesmo endereço.</p>
 
 
 ---
