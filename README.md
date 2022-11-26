@@ -16,7 +16,7 @@
 
 - [x] Padronização de Commits
 - [x] Padronização de escrita de código
-- [ ] Pipeline no Github Actions
+- [x] Pipeline no Github Actions
 - [ ] Páginas responsivas
 - [ ] Testes
 
@@ -33,6 +33,7 @@
 - commitlint
 - husky
 - Stitches
+- React Grid System
 
 ---
 
