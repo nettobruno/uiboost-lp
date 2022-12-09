@@ -43,6 +43,12 @@
 
 ---
 
+<h2>👨🏾‍💻 Projeto no Ar</h2>
+<p>Caso queira ver como o projeto está neste momento basta acessar o <a href="https://nettobruno.github.io/uiboost-lp/">Link</a>. Todas as modificações feitas até agora, e também as futuras melhorias, serão todas exibidas neste mesmo endereço.</p>
+
+
+---
+
 <h2>Como realizar um commit?</h2>
 
 Para commitar usando o commitizen, instale-o globalmente no seu computador:
