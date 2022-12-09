@@ -1,10 +1,16 @@
 import { Container, Row, Col } from 'react-grid-system'
 import { globalStyles } from './styles/stitches.config'
-import { Header, Nav, HeaderContent } from './styles'
+import { Header, Nav, HeaderContent, SectionValueOffer } from './styles'
 
 import logoUiboost from './assets/logo-uiboost.svg'
 import phoneIllustration from './assets/phone-illustration.svg'
 import arrowDown from './assets/arrow-down.svg'
+import illustrationValueOffer1 from './assets/value-offer-1.svg'
+import illustrationValueOffer2 from './assets/value-offer-2.svg'
+import illustrationValueOffer3 from './assets/value-offer-3.svg'
+import uiboostLine from './assets/uiboost-line.svg'
+
+
 
 import ButtonStore from './components/ButtonStore'
 
@@ -53,6 +59,37 @@ function App() {
           </Row>
         </Container>
       </Header>
+
+
+      <SectionValueOffer>
+        <Container>
+          <Row>
+            <Col>
+              <h2>O <span>Boost</span> para a sua carreira</h2>
+              <p>Ajudamos designers a se especializarem em UI design</p>
+
+              <div className='illustrtions-value-offer'>
+                <figure>
+                  <img src={illustrationValueOffer1} alt="" />
+                  <figcaption>Alunos com certificações</figcaption>
+                </figure>
+
+                <figure>
+                  <img src={illustrationValueOffer2} alt="" />
+                  <figcaption>Horas de conteúdo gravado</figcaption>
+                </figure>
+
+                <figure>
+                  <img src={illustrationValueOffer3} alt="" />
+                  <figcaption>Horas de mentoria por turma</figcaption>
+                </figure>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </SectionValueOffer>
+
+      <img src={uiboostLine} style={{ width: '100%' }} alt="" />
     </>
   )
 }
