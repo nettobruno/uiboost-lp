@@ -1,7 +1,7 @@
 import { styled } from './styles/stitches.config'
 
 export const Header = styled('header', {
-  width: '100vw',
+  width: '100%',
   height: '100vh',
   background: '$gray900',
 })
@@ -86,5 +86,56 @@ export const HeaderContent = styled('div', {
   '.buttons': {
     display: 'flex',
     gap: '20px'
+  }
+})
+
+
+export const SectionValueOffer= styled('section', {
+  background: '$gray900',
+
+  width: '100%',
+  padding: '150px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: '$poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '43px',
+    textAlign: 'center',
+
+    marginBottom: '10px'
+  },
+
+  'h2 span': {
+    color: '$pink900',
+  },
+
+  'p': {
+    color: 'white',
+    fontFamily: '$inter',
+    fontWeight: 400,
+    fontSize: '18px',
+    lineHeight: '27px',
+    textAlign: 'center',
+
+    marginBottom: '24px'
+  },
+
+  'div.illustrtions-value-offer': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+
+    marginTop: '50px'
+  },
+
+  'figcaption': {
+    color: 'white',
+    fontFamily: '$inter',
+    fontWeight: 400,
+    fontSize: '18px',
+    lineHeight: '27px',
+    textAlign: 'center',
   }
 })
