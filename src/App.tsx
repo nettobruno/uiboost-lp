@@ -1,6 +1,12 @@
 import { Container, Row, Col } from 'react-grid-system'
+import Slider from 'react-slick';
 import { globalStyles } from './styles/stitches.config'
-import { Header, Nav, HeaderContent, SectionValueOffer, LineImage, SectionFunctionalities } from './styles'
+
+import { Header, Nav, HeaderContent, SectionValueOffer, LineImage, SectionFunctionalities, SectionFeedback, ItemSlide } from './styles'
+// Importação css do slide
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import './style-slide.css'
 
 import logoUiboost from './assets/logo-uiboost.svg'
 import phoneIllustration from './assets/phone-illustration.svg'
@@ -14,14 +20,44 @@ import arrowDownload from './assets/arrow-download.svg'
 import iconStack from './assets/icon-stack.svg'
 import iconStar from './assets/icon-star.svg'
 import iconChat from './assets/icon-chat.svg'
-
-
+import imageAvatars from './assets/avatares.svg'
+import iconArrowRight from './assets/icon-arrow-right.svg'
+import imageAvatar from './assets/image-avatar.svg'
 
 import ButtonStore from './components/ButtonStore'
 
 
 function App() {
   globalStyles()
+
+  const settings = {
+    className: 'center',
+    centerMode: true,
+    infinite: true,
+    slidesToShow: 3,
+    speed: 500,
+    dots: false,
+    arrows: false,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+        },
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
+  };
 
   return (
     <>
@@ -138,6 +174,97 @@ function App() {
           </Row>
         </Container>
       </SectionFunctionalities>
+
+      <SectionFeedback>
+        <Container>
+          <Row>
+            <Col>
+              <h2>O que alguns dos nossos alunos estão falando</h2>
+              <p className='subtitle'>Alguns feedbacks de alunos que já passaram pelo curso</p>
+
+              <div className='align'>
+                <img src={imageAvatars} alt="" />
+                <p>+2.000 alunos</p>
+              </div>
+
+              <a href="/#">
+                <p>Quero ser ui Boost</p>
+                <img src={iconArrowRight} alt="" />
+              </a>
+
+              <section>
+              <Slider {...settings}>
+                <ItemSlide>
+                  <p>“Excelente curso, reconhecido no mercado com seu devido valor. O Gilberto é sempre atencioso todoas as vezes que necessito de um feedback”</p>
+                  <div>
+                    <img src={imageAvatar} alt="" />
+                    <hgroup>
+                      <h4>Maria Fernandes</h4>
+                      <h5>Product Designer Jr na McAfee</h5>
+                    </hgroup>
+                  </div>
+                </ItemSlide>
+
+                <ItemSlide>
+                  <p>“Excelente curso, reconhecido no mercado com seu devido valor. O Gilberto é sempre atencioso todoas as vezes que necessito de um feedback”</p>
+                  <div>
+                    <img src={imageAvatar} alt="" />
+                    <hgroup>
+                      <h4>Maria Fernandes</h4>
+                      <h5>Product Designer Jr na McAfee</h5>
+                    </hgroup>
+                  </div>
+                </ItemSlide>
+
+                <ItemSlide>
+                  <p>“Excelente curso, reconhecido no mercado com seu devido valor. O Gilberto é sempre atencioso todoas as vezes que necessito de um feedback”</p>
+                  <div>
+                    <img src={imageAvatar} alt="" />
+                    <hgroup>
+                      <h4>Maria Fernandes</h4>
+                      <h5>Product Designer Jr na McAfee</h5>
+                    </hgroup>
+                  </div>
+                </ItemSlide>
+
+                <ItemSlide>
+                  <p>“Excelente curso, reconhecido no mercado com seu devido valor. O Gilberto é sempre atencioso todoas as vezes que necessito de um feedback”</p>
+                  <div>
+                    <img src={imageAvatar} alt="" />
+                    <hgroup>
+                      <h4>Maria Fernandes</h4>
+                      <h5>Product Designer Jr na McAfee</h5>
+                    </hgroup>
+                  </div>
+                </ItemSlide>
+
+                <ItemSlide>
+                  <p>“Excelente curso, reconhecido no mercado com seu devido valor. O Gilberto é sempre atencioso todoas as vezes que necessito de um feedback”</p>
+                  <div>
+                    <img src={imageAvatar} alt="" />
+                    <hgroup>
+                      <h4>Maria Fernandes</h4>
+                      <h5>Product Designer Jr na McAfee</h5>
+                    </hgroup>
+                  </div>
+                </ItemSlide>
+
+                <ItemSlide>
+                  <p>“Excelente curso, reconhecido no mercado com seu devido valor. O Gilberto é sempre atencioso todoas as vezes que necessito de um feedback”</p>
+                  <div>
+                    <img src={imageAvatar} alt="" />
+                    <hgroup>
+                      <h4>Maria Fernandes</h4>
+                      <h5>Product Designer Jr na McAfee</h5>
+                    </hgroup>
+                  </div>
+                </ItemSlide>
+              </Slider>
+              </section>
+            </Col>
+          </Row>
+        </Container>
+      </SectionFeedback>
     </>
   )
 }

@@ -1,0 +1,12 @@
+.slick-slider > div > div > div > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-center > div > div {
+  transform: scale(1.1);
+  opacity: 1;
+
+  transition: all .5s;
+}
