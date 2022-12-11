@@ -139,3 +139,76 @@ export const SectionValueOffer= styled('section', {
     textAlign: 'center',
   }
 })
+
+export const LineImage= styled('section', {
+  background: '$gray900'
+})
+
+
+export const SectionFunctionalities= styled('section', {
+  background: '$gray900',
+
+  width: '100%',
+  padding: '150px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: '$poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '43px',
+
+    marginBottom: '24px'
+  },
+
+  'p.subtitle': {
+    color: 'white',
+    fontFamily: '$inter',
+    fontWeight: 400,
+    fontSize: '18px',
+    lineHeight: '27px',
+
+    marginBottom: '48px'
+  },
+
+
+  'div.grid': {
+    display: 'grid',
+    gap: '100px',
+    gridTemplateColumns: '1fr 1fr',
+    gridTemplateRows: '1fr 1fr'
+  },
+
+  'div.grid div': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  'div.grid img': {
+    width: '40px',
+
+    marginBottom: '20px'
+  },
+
+  'div.grid h3': {
+    color: 'white',
+    fontFamily: '$poppins',
+    fontSize: '24px',
+    fontWeight: 500,
+    lineHeight: '28px',
+
+    marginBottom: '10px'
+  },
+
+  'div.grid p': {
+    color: 'white',
+    fontFamily: '$inter',
+    fontSize: '16px',
+    fontWeight: 400,
+    lineHeight: '24px',
+
+    textAlign: 'center'
+  },
+})
