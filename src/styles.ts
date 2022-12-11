@@ -320,3 +320,33 @@ export const ItemSlide= styled('div', {
     lineHeight: '24px',
   },
 })
+
+export const SectionNote= styled('section', {
+  background: '$gray900',
+  padding: '150px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '36px',
+
+    marginBottom: '24px'
+  },
+
+  'p.subtitle': {
+    color: '$gray200',
+    fontFamily: 'Inter',
+    fontSize: '18px',
+    fontWeight: 400,
+    lineHeight: '27px',
+
+    marginBottom: '32px'
+  },
+
+  '.buttons': {
+    display: 'flex',
+    gap: '20px'
+  }
+})

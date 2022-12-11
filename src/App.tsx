@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-grid-system'
 import Slider from 'react-slick';
 import { globalStyles } from './styles/stitches.config'
 
-import { Header, Nav, HeaderContent, SectionValueOffer, LineImage, SectionFunctionalities, SectionFeedback, ItemSlide } from './styles'
+import { Header, Nav, HeaderContent, SectionValueOffer, LineImage, SectionFunctionalities, SectionFeedback, ItemSlide, SectionNote } from './styles'
 // Importação css do slide
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -23,6 +23,7 @@ import iconChat from './assets/icon-chat.svg'
 import imageAvatars from './assets/avatares.svg'
 import iconArrowRight from './assets/icon-arrow-right.svg'
 import imageAvatar from './assets/image-avatar.svg'
+import imageNote from './assets/note-illustration.svg'
 
 import ButtonStore from './components/ButtonStore'
 
@@ -265,6 +266,26 @@ function App() {
           </Row>
         </Container>
       </SectionFeedback>
+
+      <SectionNote>
+        <Container>
+          <Row>
+            <Col md={8}>
+              <h2>Facilitamos para que você aprenda design de interfaces a qualquer hora e lugar.</h2>
+              <p className='subtitle'>Nós queremos te dar a praticidade de ter acesso a todas as aulas e mensagens na palma da mão para deixar você cada vez mais perto do seu sonho de ser um excelente ui designer.</p>
+
+              <div className="buttons">
+                <ButtonStore variant='apple' />
+                <ButtonStore variant='google' />
+              </div>
+            </Col>
+
+            <Col md={4} style={{ display: 'flex', justifyContent: 'flex-end', alignItems: 'center' }}>
+              <img src={imageNote} alt="" />
+            </Col>
+          </Row>
+        </Container>
+      </SectionNote>
     </>
   )
 }
