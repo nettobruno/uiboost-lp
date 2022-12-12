@@ -34,4 +34,8 @@ export const globalStyles = globalCss({
     border: 0,
     boxSizing: 'border-box',
   },
+
+  'html': {
+    scrollBehavior: 'smooth',
+  },
 })
