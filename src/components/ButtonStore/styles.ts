@@ -5,7 +5,7 @@ export const ButtonContainer = styled('button', {
   borderRadius: '8px',
   cursor: 'pointer',
   color: 'white',
-  fontFamily: '$inter',
+  fontFamily: 'Inter',
 
   display: 'flex',
   alignItems: 'center',

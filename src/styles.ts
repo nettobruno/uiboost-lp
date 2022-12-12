@@ -14,7 +14,7 @@ export const Nav = styled('nav', {
 
   'a': {
     color: '$gray200',
-    fontFamily: '$inter',
+    fontFamily: 'Inter',
     fontSize: '16px',
     lineHeight: '24px',
     textDecoration: 'none'
@@ -37,7 +37,7 @@ export const HeaderContent = styled('div', {
 
   '.content h3': {
     color: 'white',
-    fontFamily: '$inter',
+    fontFamily: 'Inter',
     fontWeight: 'normal',
     fontSize: '14px',
     lineHeight: '21px',
@@ -47,7 +47,7 @@ export const HeaderContent = styled('div', {
 
   '.content h2': {
     color: 'white',
-    fontFamily: '$poppins',
+    fontFamily: 'Poppins',
     fontSize: '56px',
     lineHeight: '67px',
 
@@ -62,7 +62,7 @@ export const HeaderContent = styled('div', {
 
   '.content > p': {
     color: '$gray200',
-    fontFamily: '$inter',
+    fontFamily: 'Inter',
     fontSize: '18px',
     lineHeight: '27px',
 
@@ -98,7 +98,7 @@ export const SectionValueOffer= styled('section', {
 
   'h2': {
     color: 'white',
-    fontFamily: '$poppins',
+    fontFamily: 'Poppins',
     fontSize: '36px',
     fontWeight: 600,
     lineHeight: '43px',
@@ -113,7 +113,7 @@ export const SectionValueOffer= styled('section', {
 
   'p': {
     color: 'white',
-    fontFamily: '$inter',
+    fontFamily: 'Inter',
     fontWeight: 400,
     fontSize: '18px',
     lineHeight: '27px',
@@ -132,10 +132,310 @@ export const SectionValueOffer= styled('section', {
 
   'figcaption': {
     color: 'white',
-    fontFamily: '$inter',
+    fontFamily: 'Inter',
     fontWeight: 400,
     fontSize: '18px',
     lineHeight: '27px',
     textAlign: 'center',
   }
+})
+
+export const LineImage= styled('section', {
+  background: '$gray900'
+})
+
+export const SectionFunctionalities= styled('section', {
+  background: '$gray900',
+
+  width: '100%',
+  padding: '150px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '43px',
+
+    marginBottom: '24px'
+  },
+
+  'p.subtitle': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontWeight: 400,
+    fontSize: '18px',
+    lineHeight: '27px',
+
+    marginBottom: '48px'
+  },
+
+
+  'div.grid': {
+    display: 'grid',
+    gap: '100px',
+    gridTemplateColumns: '1fr 1fr',
+    gridTemplateRows: '1fr 1fr'
+  },
+
+  'div.grid div': {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center'
+  },
+
+  'div.grid img': {
+    width: '40px',
+
+    marginBottom: '20px'
+  },
+
+  'div.grid h3': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '24px',
+    fontWeight: 500,
+    lineHeight: '28px',
+
+    marginBottom: '10px'
+  },
+
+  'div.grid p': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 400,
+    lineHeight: '24px',
+
+    textAlign: 'center'
+  },
+})
+
+export const SectionFeedback= styled('section', {
+  background: '$gray900',
+  padding: '50px 0',
+
+  display: 'flex',
+
+  'h2': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '43px',
+    textAlign: 'center',
+
+    marginBottom: '10px'
+  },
+
+  'p.subtitle': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '18px',
+    fontWeight: 400,
+    lineHeight: '27px',
+    textAlign: 'center',
+
+    marginBottom: '20px'
+  },
+
+  'div.align': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '20px',
+
+    marginBottom: '20px'
+  },
+
+  'div.align p': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 500,
+    lineHeight: '24px',
+    textAlign: 'center',
+  },
+
+  'a': {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    gap: '10px',
+
+    textDecoration: 'none',
+
+    marginBottom: '100px'
+  },
+
+  'a p': {
+    color: '$pink900',
+    fontFamily: 'Inter',
+    fontSize: '18px',
+    fontWeight: 600,
+    lineHeight: '27px',
+    textAlign: 'center',
+  }
+})
+
+export const ItemSlide= styled('div', {
+  background: '$gray800',
+  opacity: 0.2,
+
+  borderRadius: '8px',
+
+  padding: '20px 30px',
+  margin: '20px',
+
+  'p': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '18px',
+    fontWeight: 400,
+    lineHeight: '27px',
+  },
+
+  'div': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '20px',
+
+    marginTop: '20px'
+  },
+
+  'h4': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '18px',
+    fontWeight: 600,
+    lineHeight: '27px',
+  },
+
+  'h5': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 400,
+    lineHeight: '24px',
+  },
+})
+
+export const SectionNote= styled('section', {
+  background: '$gray900',
+  padding: '150px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '36px',
+
+    marginBottom: '24px'
+  },
+
+  'p.subtitle': {
+    color: '$gray200',
+    fontFamily: 'Inter',
+    fontSize: '18px',
+    fontWeight: 400,
+    lineHeight: '27px',
+
+    marginBottom: '32px'
+  },
+
+  '.buttons': {
+    display: 'flex',
+    gap: '20px'
+  }
+})
+
+export const SectionEmail= styled('section', {
+  background: '$gray900',
+  padding: '100px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '43px',
+
+    marginBottom: '16px',
+
+    display: 'flex',
+    gap: '20px'
+  },
+
+  'p': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 400,
+    lineHeight: '24px',
+  },
+
+  'div.input-button': {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '15px'
+
+  },
+
+  'input[type=email]': {
+    backgroundColor: 'white',
+    borderRadius: '2px',
+    color: '$gray800',
+    padding: '15px',
+    width: '60%',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 400,
+  },
+
+  'button.button-input': {
+    backgroundColor: '$pink500',
+    borderRadius: '2px',
+    color: 'white',
+    padding: '15px',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 700,
+  },
+
+  'div.checkbox-label': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+  },
+
+  'label': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '14px',
+    fontWeight: 400,
+    lineHeight: '21px',
+  },
+
+  'button.scroll-top': {
+    backgroundColor: 'transparent',
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 500,
+    marginTop: '50px',
+
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+
+    cursor: 'pointer',
+
+    transition: '.2s all'
+  },
+
+  'button.scroll-top:hover': {
+    transform: 'scale(1.1)',
+  },
 })

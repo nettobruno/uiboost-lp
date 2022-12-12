@@ -24,28 +24,18 @@ export const { styled, css, globalCss, keyframes, getCssText, theme, createTheme
         gray800: '#3A3847',
         gray900: '#17161C',
       },
-      fonts: {
-        inter: 'Inter, sans-serif',
-        poppins: 'Poppins, sans-serif',
-      },
     },
   })
 
 export const globalStyles = globalCss({
-  '@font-face': [
-    {
-      fontFamily: 'Inter',
-      src: "url('https://fonts.googleapis.com/css2?family=Inter:wght@100;400;700&display=swap')",
-    },
-    {
-      fontFamily: 'Poppins',
-      src: "url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap')",
-    },
-  ],
   '*': {
     margin: 0,
     padding: 0,
     border: 0,
     boxSizing: 'border-box',
+  },
+
+  'html': {
+    scrollBehavior: 'smooth',
   },
 })
