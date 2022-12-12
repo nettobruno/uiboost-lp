@@ -2,7 +2,7 @@ import { Container, Row, Col } from 'react-grid-system'
 import Slider from 'react-slick';
 import { globalStyles } from './styles/stitches.config'
 
-import { Header, Nav, HeaderContent, SectionValueOffer, LineImage, SectionFunctionalities, SectionFeedback, ItemSlide, SectionNote } from './styles'
+import { Header, Nav, HeaderContent, SectionValueOffer, LineImage, SectionFunctionalities, SectionFeedback, ItemSlide, SectionNote, SectionEmail } from './styles'
 // Importação css do slide
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,6 +24,10 @@ import imageAvatars from './assets/avatares.svg'
 import iconArrowRight from './assets/icon-arrow-right.svg'
 import imageAvatar from './assets/image-avatar.svg'
 import imageNote from './assets/note-illustration.svg'
+import iconEmail from './assets/icon-email.svg'
+import iconArrowTop from './assets/icon-arrow-top.svg'
+
+
 
 import ButtonStore from './components/ButtonStore'
 
@@ -286,6 +290,39 @@ function App() {
           </Row>
         </Container>
       </SectionNote>
+
+      <SectionEmail>
+        <Container>
+          <Row style={{ backgroundColor: '#3A3847', borderRadius: '8px', padding: '60px 110px' }}>
+            <Col>
+              <h2>
+                <img src={iconEmail} alt="" />
+                Receba as novidades
+              </h2>
+              <p>Inscreva-se e receba as novidades no seu E-mail.</p>
+            </Col>
+            <Col>
+              <div className='input-button'>
+                <input type="email" placeholder='Insira seu E-mail' />
+                <button type='submit' className='button-input'>Assinar agora</button>
+              </div>
+
+              <div className='checkbox-label'>
+                <input type="checkbox" name="" id="" />
+                <label htmlFor="">concordo em receber notificações</label>
+              </div>
+            </Col>
+          </Row>
+          <Row>
+            <Col style={{ display: 'flex', justifyContent: 'flex-end' }}>            
+              <button className='scroll-top' onClick={() => window.scrollTo(0, 0)}>
+                Voltar ao topo
+                <img src={iconArrowTop} alt="" />
+              </button>
+            </Col>
+          </Row>
+        </Container>
+      </SectionEmail>
     </>
   )
 }

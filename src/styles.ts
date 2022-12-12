@@ -350,3 +350,92 @@ export const SectionNote= styled('section', {
     gap: '20px'
   }
 })
+
+export const SectionEmail= styled('section', {
+  background: '$gray900',
+  padding: '100px 0',
+
+  'h2': {
+    color: 'white',
+    fontFamily: 'Poppins',
+    fontSize: '36px',
+    fontWeight: 600,
+    lineHeight: '43px',
+
+    marginBottom: '16px',
+
+    display: 'flex',
+    gap: '20px'
+  },
+
+  'p': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 400,
+    lineHeight: '24px',
+  },
+
+  'div.input-button': {
+    display: 'flex',
+    gap: '10px',
+    marginBottom: '15px'
+
+  },
+
+  'input[type=email]': {
+    backgroundColor: 'white',
+    borderRadius: '2px',
+    color: '$gray800',
+    padding: '15px',
+    width: '60%',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 400,
+  },
+
+  'button.button-input': {
+    backgroundColor: '$pink500',
+    borderRadius: '2px',
+    color: 'white',
+    padding: '15px',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 700,
+  },
+
+  'div.checkbox-label': {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+  },
+
+  'label': {
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '14px',
+    fontWeight: 400,
+    lineHeight: '21px',
+  },
+
+  'button.scroll-top': {
+    backgroundColor: 'transparent',
+    color: 'white',
+    fontFamily: 'Inter',
+    fontSize: '16px',
+    fontWeight: 500,
+    marginTop: '50px',
+
+    display: 'flex',
+    alignItems: 'center',
+    gap: '10px',
+
+    cursor: 'pointer',
+
+    transition: '.2s all'
+  },
+
+  'button.scroll-top:hover': {
+    transform: 'scale(1.1)',
+  },
+})
